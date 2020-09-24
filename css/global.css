@@ -1,0 +1,124 @@
+/* TAGS */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+/* CLASSES */
+
+.navbar {
+    margin-bottom: 0px;
+    background:black;
+    opacity: 1;
+}
+
+.white_out {
+  text-align: center;
+  color:white;
+}
+
+.breaker_short {
+  max-width: 1250px;
+  min-height: 10vh;
+}
+
+.breaker {
+  max-width: 1250px;
+  min-height: 15vh;
+}
+
+.widen_shortest {
+  max-width: 750px;
+}
+
+.widen_short {
+  max-width: 1000px;
+}
+
+.widen {
+  max-width: 1250px;
+}
+
+.widen_long {
+  max-width: 1500px;
+}
+
+.section_title {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+.section_subtitle {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+.section_subtitle_black {
+  text-align: center;
+  font-size: 2.75em;
+}
+
+.work_image {
+  width: 100px;
+  height: 100px;
+}
+
+.white {
+  background: white;
+}
+
+/* IDS */
+
+#button_up {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: black;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+/* SASS */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html, body {
+    scroll-behavior: smooth;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}

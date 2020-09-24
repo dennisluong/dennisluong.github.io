@@ -1,0 +1,27 @@
+.jumbotron {
+    background-image: url('/img/danis-lou-jfZfdQtcH6k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    min-height: 90vh; /* fullscreen cover*/
+}
+
+#jbt_container {
+    background: none; /* debug */
+    max-width: 1250px;
+}
+
+#jbt_card {
+    background: rgba(0, 0, 0, .75); /* color and opacity */
+}
+
+#jbt_image_profile {
+    /* centering */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

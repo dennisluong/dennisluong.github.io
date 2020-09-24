@@ -1,0 +1,23 @@
+#ftr_link:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#ftr_link:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+#ftr_link:hover {
+    color: #89cff0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#ftr_link:active {
+    color: #89cff0;
+    background-color: transparent;
+    text-decoration: none;
+}
