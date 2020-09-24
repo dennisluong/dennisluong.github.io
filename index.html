@@ -17,6 +17,9 @@
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/cd6fca7250.js" crossorigin="anonymous"></script>
 
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- Favicon -->
     <link rel='icon' type='image/x-icon' href='/favicon.ico'>
 
@@ -53,7 +56,7 @@
                     <a class="nav-link" href="#photos">Photos</a>
                 </li>
                 <li class="nav-item px-4">
-                    <a class="nav-link" href="#contactME">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -102,7 +105,7 @@
     <div class="container widen_short">
        <div class="row" style="min-height: 35vh;">
             <div class="col-12 py-3">
-                <div class="card">
+                <div class="card grey_out">
                     <div class="row p-4">
                         <div class="col-md-auto">
                             <img src="/img/WIP.png" alt="Current Project Image" style="max-width: 100%; max-height: 300px;">
@@ -136,7 +139,7 @@
     <div class="container widen py-3">
         <div class="card-deck">
             <!-- Card #3 -->
-            <div class="card">
+            <div class="card grey_out">
                 <!-- Image -->
                 <a href="https://github.com/dennisl308/Color-Analyzer" target="_blank">
                     <img class="card-img-top pt-3 px-3" src="/img/icons/ColorAnalyzer.png" alt="Color Analyzer Logo">
@@ -154,7 +157,7 @@
             </div>
             
             <!-- Card #2 -->
-            <div class="card">
+            <div class="card grey_out">
                 <!-- Image -->
                 <a href="https://github.com/dennisl308/Best-Buy-Item-In-Stock-Checker" target="_blank">
                     <img class="card-img-top pt-3 px-3" src="/img/icons/BestBuyChecker.png" alt="Best Buy Logo">
@@ -172,7 +175,7 @@
             </div>
 
             <!-- Card #1 -->
-            <div class="card">
+            <div class="card grey_out">
                 <!-- Image -->
                 <a href="https://connectvolunteers.org/" target="_blank">
                     <img class="card-img-top pt-3 px-3" src="/img/icons/connectVolunteersLogo.png" alt="Connect Volunteers Logo">
@@ -210,7 +213,7 @@
         <div class="card w-100">
             <ul class="list-group list-group-flush">
                 <!-- Job #3 -->
-                <li class="list-group-item">
+                <li class="list-group-item grey_out">
                 <div class="row py-2">
                     <!-- Image -->
                     <div class="col-auto">
@@ -232,7 +235,7 @@
                 </li>
             
                 <!-- Job #2 -->
-                <li class="list-group-item">
+                <li class="list-group-item grey_out">
                 <div class="row py-2">
                     <!-- Image -->
                     <div class="col-auto">
@@ -257,7 +260,7 @@
                 </li>
 
                 <!-- Job #1 -->
-                <li class="list-group-item">
+                <li class="list-group-item grey_out">
                 <div class="row py-2">
                     <!-- Image -->
                     <div class="col-auto">
@@ -327,29 +330,85 @@
     </div>
 
     <!-- SECTION BREAKER -->
-    <div class="container breaker_short"></div>
+    <div id="contact" class="container breaker_short"></div>
     <!--------------------->
 
     <!-- CARD - Contact Me -->
+    <div class="container widen_short" >
+        <form action="https://usebasin.com/f/c34f22a5caaa" method="POST" class="rounded grey_out px-5 py-2">
+            <!-- Title -->
+            <h1 class="display-1 section_subtitle_black py-1">Contact Me</h1>
+
+            <!-- Line border -->
+            <hr class="py-2">
+
+            <!-- Name -->
+            <div class="form-group row">
+                <label for="full-name" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-5">
+                  <input name="Name" type="text" class="form-control" id="inputName" placeholder="" required>
+                </div>
+                <div class="col-sm-5"></div>
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group row">
+                <label for="email-address" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-5">
+                  <input name="E-mail" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="" required>
+                  <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                </div>
+                <div class="col-sm-5"></div>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group row">
+                <label for="subject-line" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-10">
+                    <input name="Subject" type="text" class="form-control" id="inputSubject" placeholder="" required>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group row">
+                <label for="message-line" class="col-sm-2 col-form-label">Message</label>
+                <div class="col-sm-10">
+                    <textarea name="Message" class="form-control" id="inputMessage" style="min-height: 100px; max-height: 200px;" placeholder="" required></textarea>
+                </div>
+            </div>
+
+            <!-- Captcha and Submit Button -->
+            <div class="form-group row">
+                <div class="col-sm-2" ></div>
+                <div class="col-sm-8 g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
+                <div class="col-sm-1">
+                    <button type="submit" class="btn btn-dark mt-3">Submit</button>
+                </div>
+            </div>
+        </form>  
+    </div>
+
+    <!-- CARD - Contact Me Alternative (Hidden)
     <div id="contactME" class="container widen_shortest py-5">
         <div class="col-12 white px-5 py-4 text-center">
-            <!-- Title -->
             <h1 class="display-1 section_subtitle_black pt-2">Contact Me</h1>
-            
-            <!-- Line border -->
             <hr class="my-3">
-            
-            <!-- E-mail -->
             <svg class="mt-2" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
             </svg>
-            <h6 class="m-2">dennisluong308@gmail.com</h6>
+            <h6 class="m-2"></h6>
         </div>
     </div>
+    -->
+
+    <!-- SECTION BREAKER -->
+    <div class="container breaker_short"></div>
+    <!--------------------->
 
     <!-- FOOTER -->
     <footer class="container-fluid mx-auto bg-4" style="background-color: #000000; color: #ffffff;">
         <div class="text-center row p-3">
+            <!-- Credits -->
             <div class="col-md-4 mt-0">
                 <p>
                     Logo designed by
@@ -359,19 +418,21 @@
                     <a id="ftr_link" href="https://unsplash.com/@danislou/" target="_blank">Danis Lou.</a>
                 </p>
 
-                <p>
-                </p>
+                <p></p>
             </div>
 
+            <!-- Credit - Middle -->
             <div class="col-md-4 mt-3">
                 Website created by me.
             </div>
 
+            <!-- Social Links -->
             <div class="col-md-4 mt-1">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="https://github.com/dennisluong" target="_blank">
                     <img src="/img/icons/GitHub_White.png" width="25" height="25" alt="logo">
                 </a>
-                <a class="navbar-brand" href="#">
+                
+                <a class="navbar-brand" href="https://www.linkedin.com/in/dennisl308/" target="_blank">
                     <img src="/img/icons/Linkedin_White.png" width="30" height="25" alt="logo">
                 </a>
             </div>

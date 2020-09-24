@@ -27,6 +27,15 @@ a {
   color:white;
 }
 
+.grey_out {
+  background-color: #fcfcfc;
+}
+
+.breaker_shortest {
+  max-width: 1250px;
+  min-height: 5vh;
+}
+
 .breaker_short {
   max-width: 1250px;
   min-height: 10vh;
