@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
     $(window).scroll(function() {
         if ($(window).scrollTop() > 100) {
@@ -7,4 +8,4 @@ $(document).ready(function(){
         }
     });
 });
-
+*/

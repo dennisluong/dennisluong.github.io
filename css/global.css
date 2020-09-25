@@ -5,9 +5,9 @@ html {
 }
 
 body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -17,9 +17,13 @@ a {
 /* CLASSES */
 
 .navbar {
-    margin-bottom: 0px;
-    background:black;
-    opacity: 1;
+  background-color: black;
+  margin: 0;
+}
+
+.footer_color {
+  background-color: black;
+  color: #f7f7f7;
 }
 
 .white_out {
@@ -28,7 +32,7 @@ a {
 }
 
 .grey_out {
-  background-color: #fcfcfc;
+  background-color: #f7f7f7;
 }
 
 .breaker_shortest {
@@ -64,14 +68,14 @@ a {
 
 .section_title {
   text-align: center;
-  color: white;
+  color: #f7f7f7;
   font-size: 3em;
 }
 
 .section_subtitle {
   text-align: center;
-  color: white;
-  font-size: 2.5em;
+  color: #f7f7f7;
+  font-size: 2.25em;
 }
 
 .section_subtitle_black {
